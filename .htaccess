@@ -1,0 +1,20 @@
+# Disable LiteSpeed Cache completely
+<IfModule LiteSpeed>
+CacheLookup off
+</IfModule>
+
+# Disable all caching for HTML
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
+
+# Also disable caching for ALL files in this directory
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires "0"
+</IfModule>

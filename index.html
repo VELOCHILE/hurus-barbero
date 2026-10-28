@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Barbería en Rancagua · Hurus Studio</title>
+<meta name="description" content="Barbería en Rancagua. Corte, barba y toalla caliente. Precio especial en efectivo. Membrillar 50 y Cristóbal Colón 408.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#080808">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hurus Barber Studio · Rancagua">
+<meta property="og:description" content="Reserva tu hora online. Membrillar 50 y Cristóbal Colón 408.">
+<meta property="og:url" content="https://velochile.com/hurus/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23080808'/%3E%3Ccircle cx='24' cy='24' r='17' fill='none' stroke='%23C8CACC' stroke-width='1.6'/%3E%3Ctext x='24' y='30' text-anchor='middle' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23EDEDF0'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css?v=50">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ico-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="ico-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ico-back" viewBox="0 0 24 24"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ico-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ico-star" viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L12 16.8l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z" fill="currentColor"/></symbol>
+    <symbol id="ico-wa" viewBox="0 0 24 24"><path d="M20.5 3.5A12 12 0 0 0 3.6 17.9L2 22l4.3-1.6A12 12 0 1 0 20.5 3.5zm-8.5 18a9.9 9.9 0 0 1-5.1-1.4l-.4-.2-3.6 1 1-3.5-.3-.4A9.9 9.9 0 1 1 12 21.5zm5.4-7.4c-.3-.1-1.8-.9-2-.9-.3-.1-.5-.2-.7.2s-.8.9-1 1.1c-.2.2-.4.2-.7.1a9 9 0 0 1-2.6-1.6 9.4 9.4 0 0 1-1.8-2.3c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4A3.8 3.8 0 0 0 6 9.8c0 2.2 1.6 4.4 1.8 4.7.3.3 3.1 4.7 7.5 6.6 1 .5 1.9.7 2.5.9 1.1.3 2 .3 2.8.2.8-.1 2.6-1 3-2s.4-1.8.3-2l-.5-.2z" fill="currentColor"/></symbol>
+    <symbol id="ico-map" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="ico-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="ico-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-fila" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L12 16.8l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-silla" viewBox="0 0 24 24"><path d="M7 4h10v7H7zM5 11h14v3H5zM8 14v6M16 14v6M6 20h4M14 20h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-5 4v-4A2.5 2.5 0 0 1 4 14.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-mas" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-atras" viewBox="0 0 24 24"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="7" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="demo-bar">Demo por <a href="https://velochile.com" rel="noopener">VELO</a> · datos ilustrativos</div>
+
+<div class="telon" id="telon" aria-hidden="true">
+  <svg viewBox="0 0 64 64"><circle class="t-bg" cx="32" cy="32" r="29"/><circle class="t-fg" cx="32" cy="32" r="29"/></svg>
+  <span>HURUS</span>
+</div>
+
+<!-- NAV fija, siempre visible -->
+<header class="nav" id="nav">
+  <a class="brand" href="#scroll-wrap" aria-label="Hurus Studio, inicio">
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="none" stroke="#C8CACC" stroke-width="1.4"/>
+      <text x="24" y="29.5" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="15" font-weight="600" fill="#EDEDF0">H</text>
+    </svg>
+    <span><b>HURUS</b><small>STUDIO</small></span>
+  </a>
+  <div class="nav-acts">
+    <a class="nav-ig" href="https://www.instagram.com/hurus_barber/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg aria-hidden="true"><use href="#i-ig"/></svg>
+    </a>
+    <button class="btn-reservar" type="button" data-abrir="reserva">Solicitar hora</button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- SCROLL PRINCIPAL: scroll-snap vertical, paneles full-height -->
+  <div class="scroll-wrap" id="scroll-wrap">
+
+    <!-- Panel 0: Hero / portada -->
+    <section class="panel panel-hero" id="p-hero" data-panel="0">
+      <img class="hero-bg-foto" src="img/hero-hurus-local-completo.webp" alt="">
+      <div class="hero-velo"></div>
+      <div class="hero-content">
+        <img class="hero-logo" src="img/logo-hurus-transp.webp" alt="Hurus Studio">
+        <div class="hero-copy">
+          <h1 class="hero-titulo">+1.000 cortes<br>al mes</h1>
+          <p class="hero-sub">Dos locales en Rancagua · 13 barberos</p>
+          <div class="hero-cta">
+            <button class="btn-red" type="button" data-abrir="reserva">Solicitar hora</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-cue" aria-label="Desliza hacia abajo">
+        <span class="cue-line"></span>
+      </div>
+    </section>
+
+    <!-- Panel ambiente: foto interior -->
+    <section class="panel panel-ambiente" id="p-ambiente">
+      <img class="ambiente-foto" src="img/neon-hurus-barber-studio.webp" alt="Hurus Barber Studio, local Cristóbal Colón Rancagua">
+      <div class="ambiente-velo"></div>
+      <div class="ambiente-caption">
+        <span class="ambiente-rule"></span>
+        <h2 class="ambiente-titulo">Dos locales.<br>Una obsesión.</h2>
+      </div>
+      <div class="panel-cue" aria-label="Desliza hacia abajo">
+        <span class="cue-line"></span>
+      </div>
+    </section>
+
+    <!-- Panel barberos: carrusel horizontal -->
+    <section class="panel panel-barberos" id="p-barberos">
+      <div class="barb-head">
+        <p class="kicker-gold">El equipo</p>
+        <h2 class="sec-titulo">13 barberos.<br>Uno para ti.</h2>
+      </div>
+      <div class="barb-rail" id="barb-rail"></div>
+    </section>
+
+    <!-- Panel servicios -->
+    <section class="panel panel-servicios" id="p-servicios">
+      <div class="panel-inner servicios-layout">
+        <div class="servicios-contenido">
+          <p class="kicker-gold">Servicios</p>
+          <h2 class="sec-titulo">Precios claros</h2>
+          <ul class="tarifa-lista" id="tarifa"></ul>
+          <div class="efec-nota" id="efectivo"></div>
+          <div class="sec-ctas">
+            <button class="btn-red" type="button" data-abrir="reserva">Solicitar hora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel reseñas -->
+    <section class="panel panel-resenas" id="p-resenas">
+      <div class="panel-inner wrap-sm">
+        <p class="kicker-gold">Reseñas reales</p>
+        <h2 class="sec-titulo">Lo que dicen los clientes</h2>
+        <div class="rating-box">
+          <div class="nota-num" id="nota-big">4,9</div>
+          <div class="nota-det">
+            <div class="stars-wrap" id="nota-stars" aria-hidden="true"></div>
+            <p><a id="nota-link" href="#" target="_blank" rel="noopener">+300 reseñas en Google</a></p>
+          </div>
+        </div>
+        <div class="muro" id="muro" aria-label="Reseñas"></div>
+        <div class="sec-ctas" style="margin-top:2rem">
+          <a class="btn-ghost sm" id="ver-google" href="#" target="_blank" rel="noopener">Ver en Google</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel locales -->
+    <section class="panel panel-locales" id="p-locales">
+      <div class="panel-inner locales-layout">
+        <div class="locales-video-wrap">
+          <video class="locales-foto locales-video" src="video/reel-membrillar.mp4" autoplay muted loop playsinline></video>
+          <button class="locales-play-btn" aria-label="Ver video completo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="locales-centro">
+          <p class="kicker-gold">Dónde estamos</p>
+          <h2 class="sec-titulo">Dos locales en Rancagua</h2>
+          <div class="locales-grid" id="lista-locales"></div>
+        </div>
+        <div class="locales-video-wrap">
+          <video class="locales-foto locales-video" src="video/reel-cristobal.mp4" autoplay muted loop playsinline></video>
+          <button class="locales-play-btn" aria-label="Ver video completo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel FAQ -->
+    <section class="panel panel-faq" id="p-faq">
+      <div class="panel-inner">
+        <p class="kicker-gold">Dudas</p>
+        <h2 class="sec-titulo">Antes de venir</h2>
+        <div class="faq" id="faq"></div>
+        <div class="sec-ctas" style="margin-top:2.5rem">
+          <button class="btn-red" type="button" data-abrir="reserva">Solicitar hora</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel reels -->
+    <section class="panel panel-reels" id="p-reels">
+      <div class="panel-inner reels-inner">
+        <p class="kicker-gold">Reels</p>
+        <h2 class="sec-titulo">Mira cómo trabajamos</h2>
+        <div class="reels-grid">
+          <div class="reel-item locales-video-wrap">
+            <video class="reel-video locales-video" src="video/reel-3.mp4" autoplay muted loop playsinline></video>
+            <button class="locales-play-btn" aria-label="Ver video completo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></button>
+          </div>
+          <div class="reel-item locales-video-wrap">
+            <video class="reel-video locales-video" src="video/reel-4.mp4" autoplay muted loop playsinline></video>
+            <button class="locales-play-btn" aria-label="Ver video completo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></button>
+          </div>
+          <div class="reel-item locales-video-wrap">
+            <video class="reel-video locales-video" src="video/reel-5.mp4" autoplay muted loop playsinline></video>
+            <button class="locales-play-btn" aria-label="Ver video completo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></button>
+          </div>
+          <div class="reel-item locales-video-wrap">
+            <video class="reel-video locales-video" src="video/reel-6.mp4" autoplay muted loop playsinline></video>
+            <button class="locales-play-btn" aria-label="Ver video completo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel galería: fotos de clientes enviadas por Seba -->
+    <section class="panel panel-galeria" id="p-galeria">
+      <div class="panel-inner galeria-inner">
+        <p class="kicker-gold">Resultados</p>
+        <h2 class="sec-titulo">El trabajo habla</h2>
+        <div class="galeria-grid">
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-1.webp"><img class="galeria-foto" src="img/foto-seba-1.webp" alt="Resultado corte Hurus Studio" style="object-position:center 20%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-2.webp"><img class="galeria-foto" src="img/foto-seba-2.webp" alt="Resultado corte Hurus Studio" style="object-position:center 30%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-3.webp"><img class="galeria-foto" src="img/foto-seba-3.webp" alt="Resultado corte Hurus Studio" style="object-position:center 30%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-4.webp"><img class="galeria-foto" src="img/foto-seba-4.webp" alt="Resultado corte Hurus Studio" style="object-position:center 25%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-5.webp"><img class="galeria-foto" src="img/foto-seba-5.webp" alt="Resultado corte Hurus Studio"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-6.webp"><img class="galeria-foto" src="img/foto-seba-6.webp" alt="Resultado corte Hurus Studio" style="object-position:center 30%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-7.webp"><img class="galeria-foto" src="img/foto-seba-7.webp" alt="Resultado corte Hurus Studio" style="object-position:center 15%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-8.webp"><img class="galeria-foto" src="img/foto-seba-8.webp" alt="Resultado corte Hurus Studio" style="object-position:center 20%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+          <div class="galeria-item lb-img-wrap" data-src="img/foto-seba-9.webp"><img class="galeria-foto" src="img/foto-seba-9.webp" alt="Resultado corte Hurus Studio" style="object-position:center 25%"><button class="locales-play-btn galeria-zoom-btn" aria-label="Ver foto completa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pie">
+      <div class="pie-inner">
+        <div class="pie-marca">
+          <span class="pie-nombre">HURUS</span>
+          <p class="pie-lema">Estilo · Precisión · Confianza</p>
+        </div>
+        <div class="pie-col">
+          <h4 class="pie-ttl">Locales</h4>
+          <p>Membrillar 50, Local 1<br>Rancagua</p>
+          <p>Cristóbal Colón 408<br>Rancagua</p>
+          <p class="pie-hora">Lun 11:00–19:00 · Mar–Sáb 10:00–19:00</p>
+        </div>
+        <div class="pie-col">
+          <h4 class="pie-ttl">Contacto</h4>
+          <a href="tel:+56949607680" class="pie-link">+56 9 4960 7680</a>
+          <a href="https://wa.me/56949607680" target="_blank" rel="noopener" class="pie-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.126 1.523 5.862L.057 23.86a.5.5 0 0 0 .604.634l6.194-1.62A11.97 11.97 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.97 9.97 0 0 1-5.101-1.393l-.35-.21-3.658.957.975-3.558-.228-.365A9.968 9.968 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/hurus_barber/" target="_blank" rel="noopener" class="pie-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            @hurus_barber
+          </a>
+        </div>
+        <div class="pie-col">
+          <h4 class="pie-ttl">Sitio</h4>
+          <a href="#" class="pie-link">Inicio</a>
+          <a href="#" class="pie-link">Servicios</a>
+          <a href="#" class="pie-link">Barberos</a>
+          <a href="#" class="pie-link">Locales</a>
+        </div>
+      </div>
+      <div class="pie-compliance">
+        <p class="pie-compliance-txt">Este sitio cumple con la <strong>Ley 19.628</strong> y la <strong>Ley 21.719</strong> de Protección de Datos Personales de Chile · <strong>Ley 17.336</strong> de Propiedad Intelectual · Reglamento de la Ley 19.628. Los datos personales recopilados a través de este sitio se utilizan exclusivamente para la gestión de reservas y comunicación con clientes, y no son cedidos a terceros sin consentimiento explícito.</p>
+      </div>
+      <div class="pie-bottom">
+        <div class="pie-bottom-left">
+          <p class="pie-copy">© 2026 Hurus Studio. Todos los derechos reservados.</p>
+          <p class="pie-rut">Hurus Barber Studio SpA · RUT: [dato del cliente] · Rancagua, Región del Libertador</p>
+        </div>
+        <nav class="pie-legal" aria-label="Legal">
+          <button type="button" data-modal="privacidad">Política de privacidad</button>
+          <button type="button" data-modal="terminos">Términos y condiciones</button>
+          <button type="button" data-modal="cookies">Política de cookies</button>
+        </nav>
+      </div>
+    </footer>
+
+  </div><!-- /scroll-wrap -->
+
+</main>
+
+<!-- Barra flotante inferior -->
+<div class="barra" aria-label="Acciones rápidas">
+  <button class="btn-red w100" type="button" data-abrir="reserva">Solicitar hora</button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog class="hoja" id="hoja-reserva" aria-labelledby="hr-t"><div class="hoja-panel" id="hr-panel"></div></dialog>
+
+<!-- Modal: Política de privacidad -->
+<dialog class="modal-legal" id="modal-privacidad" aria-labelledby="mp-t">
+  <div class="modal-body">
+    <div class="modal-head">
+      <h2 id="mp-t">Política de Privacidad</h2>
+      <button class="modal-close" data-close="privacidad" aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-info">Última actualización: octubre 2026 · Responsable: Hurus Barber Studio SpA · RUT: [dato del cliente] · Rancagua, Chile · Contacto: <a href="tel:+56949607680">+56 9 4960 7680</a></div>
+
+    <h3>1. Qué datos recopilamos</h3>
+    <p>Para gestionar su reserva de hora o cola virtual recopilamos únicamente: nombre completo, número de teléfono y, de forma opcional, correo electrónico. No recopilamos datos sensibles (salud, origen étnico, datos financieros).</p>
+
+    <h3>2. Finalidad y base legal</h3>
+    <ul>
+      <li><strong>Gestión de la reserva:</strong> ejecución del contrato de servicio (Art. 13 letra b, Ley 21.719).</li>
+      <li><strong>Comunicación del estado de la cita:</strong> interés legítimo del prestador.</li>
+      <li><strong>Registro contable:</strong> obligación legal tributaria (Ley 824 SII).</li>
+    </ul>
+
+    <h3>3. Conservación</h3>
+    <p>Sus datos se eliminan a los 30 días desde que el servicio fue prestado, salvo que la legislación tributaria exija un plazo mayor (hasta 6 años según Código Tributario).</p>
+
+    <h3>4. Cesión a terceros</h3>
+    <p>No cedemos sus datos a terceros con fines comerciales. Podemos compartirlos únicamente con plataformas de agendamiento vinculadas a este sitio (encargados de tratamiento), bajo las mismas condiciones de seguridad.</p>
+
+    <h3>5. Sus derechos (Ley 21.719)</h3>
+    <ul>
+      <li><strong>Acceso:</strong> solicitar una copia de sus datos.</li>
+      <li><strong>Rectificación:</strong> corregir datos inexactos.</li>
+      <li><strong>Supresión:</strong> eliminar sus datos cuando ya no sean necesarios.</li>
+      <li><strong>Oposición:</strong> oponerse al tratamiento basado en interés legítimo.</li>
+      <li><strong>Portabilidad:</strong> recibir sus datos en formato legible por máquina.</li>
+    </ul>
+    <p>Para ejercer sus derechos escríbanos a <a href="tel:+56949607680">+56 9 4960 7680</a> (WhatsApp) o visítenos en cualquiera de nuestros locales en Rancagua. Responderemos en un plazo máximo de 30 días hábiles. Si considera que sus derechos no han sido atendidos, puede reclamar ante el <strong>Consejo para la Transparencia</strong> (cplt.cl).</p>
+
+    <h3>6. Seguridad</h3>
+    <p>Aplicamos medidas técnicas y organizativas proporcionales al riesgo: conexión cifrada HTTPS, acceso restringido al personal autorizado y registro de actividad.</p>
+
+    <hr class="modal-divider">
+    <p style="font-size:11px;color:var(--text-muted)">Esta política se rige por la Ley 21.719 (Ley de Protección de Datos Personales, Chile) y, respecto de visitantes del Espacio Económico Europeo, por el Reglamento (UE) 2016/679 (RGPD).</p>
+  </div>
+</dialog>
+
+<!-- Modal: Términos y condiciones -->
+<dialog class="modal-legal" id="modal-terminos" aria-labelledby="mt-t">
+  <div class="modal-body">
+    <div class="modal-head">
+      <h2 id="mt-t">Términos y Condiciones</h2>
+      <button class="modal-close" data-close="terminos" aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-info">Prestador: Hurus Barber Studio SpA · RUT: [dato del cliente] · Rancagua, Chile · Actividad: Peluquería y barbería (CIIU 9602)</div>
+
+    <h3>1. Objeto</h3>
+    <p>Estos términos regulan el uso del sistema de reserva y cola virtual de Hurus Studio (en adelante, «el Servicio») conforme a la Ley 19.496 sobre Protección de los Derechos de los Consumidores (Chile) y sus modificaciones.</p>
+
+    <h3>2. Reserva de hora</h3>
+    <ul>
+      <li>La reserva queda confirmada al seleccionar barbero, horario y completar el pago o la solicitud según el flujo indicado en pantalla.</li>
+      <li>El usuario recibirá confirmación vía WhatsApp o correo al número o dirección informados.</li>
+      <li>Cada barbero atiende una cita a la vez; la confirmación es nominal y no transferible.</li>
+    </ul>
+
+    <h3>3. Puntualidad y tolerancia</h3>
+    <p>Se otorga una tolerancia de <strong>15 minutos</strong> desde la hora agendada. Transcurrido ese tiempo sin presentación ni aviso, la hora se libera para otro cliente dado el alto nivel de demanda. Si sabe que llegará tarde, comuníquese por WhatsApp al <a href="https://wa.me/56949607680" target="_blank" rel="noopener">+56 9 4960 7680</a>.</p>
+
+    <h3>4. Precios y formas de pago</h3>
+    <ul>
+      <li>Los precios publicados incluyen IVA conforme al D.L. 825.</li>
+      <li>Se aceptan: efectivo (precio rebajado), tarjeta de débito/crédito y transferencia electrónica.</li>
+      <li>El precio efectivo se aplica únicamente al pagar en efectivo en el local.</li>
+      <li>Los precios pueden modificarse sin previo aviso; el precio vigente es el mostrado al momento de la reserva.</li>
+    </ul>
+
+    <h3>5. Cancelación y retracto</h3>
+    <p>De conformidad con el Art. 3 bis letra b) de la Ley 19.496, el derecho de retracto aplica dentro de los <strong>10 días hábiles</strong> siguientes a la contratación, siempre que el servicio no haya sido prestado. Para cancelar, contacte por WhatsApp con al menos <strong>2 horas de anticipación</strong>.</p>
+
+    <h3>6. Responsabilidad del prestador</h3>
+    <p>Hurus Studio garantiza la prestación del servicio por profesionales capacitados. Ante cualquier disconformidad, el consumidor puede recurrir al SERNAC (sernac.cl) o al Juzgado de Policía Local competente en Rancagua.</p>
+
+    <h3>7. Propiedad intelectual</h3>
+    <p>El nombre, logotipo y contenidos de este sitio son de titularidad exclusiva de Hurus Barber Studio SpA y se encuentran protegidos por la Ley 17.336 sobre Propiedad Intelectual. Queda prohibida su reproducción sin autorización.</p>
+
+    <h3>8. Ley aplicable y fuero</h3>
+    <p>Estas condiciones se rigen por las leyes de la República de Chile. Para efectos de cualquier controversia las partes se someten a la jurisdicción de los Tribunales de Justicia de la ciudad de Rancagua.</p>
+  </div>
+</dialog>
+
+<!-- Modal: Política de cookies -->
+<dialog class="modal-legal" id="modal-cookies" aria-labelledby="mc-t">
+  <div class="modal-body">
+    <div class="modal-head">
+      <h2 id="mc-t">Política de Cookies</h2>
+      <button class="modal-close" data-close="cookies" aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <h3>¿Qué son las cookies?</h3>
+    <p>Las cookies son pequeños archivos de texto que un sitio web almacena en su navegador para recordar información de su visita.</p>
+
+    <h3>Cookies que usamos</h3>
+    <p>Este sitio utiliza <strong>únicamente cookies técnicas estrictamente necesarias</strong> para el funcionamiento del sistema de reservas y cola virtual:</p>
+    <ul>
+      <li><strong>cookie_consent</strong> — Registra si usted aceptó esta política. Duración: 365 días.</li>
+      <li><strong>sessionStorage</strong> — Información temporal del proceso de reserva (nombre, servicio, hora elegida). Se elimina al cerrar la pestaña.</li>
+    </ul>
+    <p>No usamos cookies de análisis de comportamiento (Google Analytics, Hotjar u similares), ni cookies de publicidad o redes sociales de terceros.</p>
+
+    <h3>Base legal</h3>
+    <p>Conforme a la Ley 21.719 y a la Directiva ePrivacy 2002/58/CE (aplicable a visitantes de la UE), las cookies técnicas estrictamente necesarias no requieren consentimiento previo. Las informamos igualmente por transparencia.</p>
+
+    <h3>Cómo eliminar las cookies</h3>
+    <p>Puede eliminar o bloquear las cookies desde la configuración de su navegador. Tenga en cuenta que bloquearlas puede impedir el correcto funcionamiento del sistema de reservas.</p>
+    <ul>
+      <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Chrome</a></li>
+      <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener">Firefox</a></li>
+      <li><a href="https://support.apple.com/es-cl/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+    </ul>
+
+    <h3>Contacto</h3>
+    <p>Consultas sobre privacidad y cookies: <a href="https://wa.me/56949607680" target="_blank" rel="noopener">WhatsApp +56 9 4960 7680</a>.</p>
+  </div>
+</dialog>
+
+<!-- Cookie consent banner — Ley 21.719 / ePrivacy -->
+<div class="cookie-banner" id="cookie-banner" role="alertdialog" aria-label="Aviso de cookies" aria-live="polite">
+  <p class="cookie-txt">Usamos cookies técnicas necesarias para el sistema de reservas. Consulte nuestra <button type="button" data-modal="privacidad">Política de privacidad</button> y <button type="button" data-modal="cookies">Política de cookies</button>.</p>
+  <div class="cookie-btns">
+    <button type="button" id="cookie-ok" class="btn-red">Acepto</button>
+    <button type="button" id="cookie-min" class="btn-ghost">Solo necesarias</button>
+  </div>
+</div>
+
+<!-- Lightbox video -->
+<div id="video-lb" aria-modal="true" role="dialog" aria-label="Reproductor de video">
+  <button id="video-lb-cerrar" aria-label="Cerrar video">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <video id="video-lb-player" playsinline controls></video>
+  <img id="video-lb-img" src="" alt="Foto ampliada" style="display:none">
+</div>
+
+<script src="datos.js?v=22"></script>
+<script src="resenas.js?v=2"></script>
+<script src="comun.js?v=5"></script>
+<script src="app.js?v=25"></script>
+<script>
+(function(){
+  /* ---- Cookie consent ---- */
+  var CKEY = 'hurus_cookie_ok';
+  var banner = document.getElementById('cookie-banner');
+  if(!localStorage.getItem(CKEY)){
+    setTimeout(function(){ banner.classList.add('show'); }, 800);
+  }
+  function acceptCookies(){
+    localStorage.setItem(CKEY,'1');
+    banner.classList.remove('show');
+  }
+  document.getElementById('cookie-ok').addEventListener('click', acceptCookies);
+  document.getElementById('cookie-min').addEventListener('click', acceptCookies);
+
+  /* ---- Legal modals ---- */
+  function openModal(id){
+    var m = document.getElementById('modal-'+id);
+    if(m){ m.showModal(); document.body.style.overflow='hidden'; }
+  }
+  function closeModal(id){
+    var m = document.getElementById('modal-'+id);
+    if(m){ m.close(); document.body.style.overflow=''; }
+  }
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-modal]');
+    if(btn){ e.preventDefault(); openModal(btn.dataset.modal); }
+    var cls = e.target.closest('[data-close]');
+    if(cls){ closeModal(cls.dataset.close); }
+    /* Close on backdrop click */
+    if(e.target.classList && e.target.classList.contains('modal-legal')){
+      e.target.close(); document.body.style.overflow='';
+    }
+  });
+  /* ESC closes all open modals */
+  document.querySelectorAll('.modal-legal').forEach(function(m){
+    m.addEventListener('close', function(){ document.body.style.overflow=''; });
+  });
+
+  /* ---- Lightbox videos e imágenes ---- */
+  var lb = document.getElementById('video-lb');
+  var lbPlayer = document.getElementById('video-lb-player');
+  var lbImg = document.getElementById('video-lb-img');
+  var lbCerrar = document.getElementById('video-lb-cerrar');
+
+  function abrirLbVideo(src){
+    lbImg.style.display = 'none';
+    lbPlayer.style.display = '';
+    lbPlayer.src = src;
+    lb.classList.add('activo');
+    document.body.style.overflow = 'hidden';
+    lbPlayer.play();
+  }
+  function abrirLbImg(src){
+    lbPlayer.pause(); lbPlayer.src = ''; lbPlayer.style.display = 'none';
+    lbImg.src = src; lbImg.style.display = '';
+    lb.classList.add('activo');
+    document.body.style.overflow = 'hidden';
+  }
+  function cerrarLb(){
+    lbPlayer.pause(); lbPlayer.src = '';
+    lbPlayer.style.display = ''; lbImg.style.display = 'none'; lbImg.src = '';
+    lb.classList.remove('activo');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.locales-video-wrap').forEach(function(wrap){
+    wrap.addEventListener('click', function(){
+      abrirLbVideo(wrap.querySelector('.locales-video').getAttribute('src'));
+    });
+  });
+  document.querySelectorAll('.lb-img-wrap').forEach(function(wrap){
+    wrap.addEventListener('click', function(){
+      abrirLbImg(wrap.dataset.src);
+    });
+  });
+
+  lbCerrar.addEventListener('click', cerrarLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb){ cerrarLb(); }});
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && lb.classList.contains('activo')){ cerrarLb(); }});
+})();
+</script>
+</body>
+</html>
